@@ -7,9 +7,13 @@
 
 #include <cmath>
 
-double smoothCubic(double d);
-double constantD(double d);
-double smoothSin(double d);
-double smootherCubic(double d);
+double cubic(double d);
+double linear(double d);
+double smooth_cos(double d);
+double quintic(double d);
+double hermite(double d);
+double exponential(double d);
+double gaussian(double d);
+double piecewiseQuadratic(double d);
 
 #endif // SMOOTHING_FUNCTIONS_H

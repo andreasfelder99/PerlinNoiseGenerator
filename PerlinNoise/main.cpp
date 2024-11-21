@@ -36,10 +36,14 @@ int main(int argc, char* argv[]) {
 
     // Map function names to actual smoothing functions
     std::unordered_map<std::string, std::function<double(double)>> smoothingFunctions = {
-        {"cubic", smoothCubic},
-        {"constant", constantD},
-        {"sin", smoothSin},
-        {"smoother", smootherCubic}
+        {"cubic", cubic},
+        {"linear", linear},
+        {"cosine", smooth_cos},
+        {"quintic", quintic},
+        {"hermite", hermite},
+        {"exponential", exponential},
+        {"gaussian", gaussian},
+        {"piecewiseQuadratic", piecewiseQuadratic}
     };
 
     // Select the smoothing function
