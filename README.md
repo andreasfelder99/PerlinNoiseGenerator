@@ -32,32 +32,32 @@ Alle Bilder wurden mit Default-Parametern generiert.
 
 ### Constant
 
-![Linear Default](output/linear_default.png "Linear interpolation smoothing function")
+![Linear Default](Images/linear_default.png "Linear interpolation smoothing function")
 
 ### Cubic
 
-![Cubic Default](output/cubic_default.png "Cubic interpolation smoothing function")
+![Cubic Default](Images/cubic_default.png "Cubic interpolation smoothing function")
 
 ### Quintic
 
-![Quintic Default](output/quintic_default.png "Smoother interpolation smoothing function")
+![Quintic Default](Images/quintic_default.png "Smoother interpolation smoothing function")
 
 ### Cosine
 
-![Cosine Default](output/cosine_default.png "Cosine interpolation smoothing function")
+![Cosine Default](Images/cosine_default.png "Cosine interpolation smoothing function")
 
 ### Exponential
 
-![Exponential Default](output/exponential_default.png "Exponential interpolation smoothing function")
+![Exponential Default](Images/exponential_default.png "Exponential interpolation smoothing function")
 
 ### Gaussian
 
-![Gaussian Default](output/gaussian_default.png "Gaussian interpolation smoothing function")
+![Gaussian Default](Images/gaussian_default.png "Gaussian interpolation smoothing function")
 
 ### Hermite
 
-![Hermite Default](output/hermite_default.png "Hermite interpolation smoothing function")
+![Hermite Default](Images/hermite_default.png "Hermite interpolation smoothing function")
 
 ### Piecewise Quadratic
 
-![Piecewise Quadratic Default](output/piecewiseQuadratic_default.png "Piecewise quadratic interpolation smoothing function")
+![Piecewise Quadratic Default](Images/piecewiseQuadratic_default.png "Piecewise quadratic interpolation smoothing function")
