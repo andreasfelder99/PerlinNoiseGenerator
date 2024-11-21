@@ -1,0 +1,21 @@
+# ninja log v6
+1473	1495	1732001905542946262	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	147de326cf26fff6
+23	1450	1732001905498094948	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	26b36f3747a73eb
+1587	1616	1732001905664697879	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	aac627eb38202f0c
+1564	1586	1732001905634760226	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	66c2bd98f71d93a3
+1450	1473	1732001905520961835	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	9486d0234699b7b7
+1450	1473	1732001905520961835	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	9486d0234699b7b7
+1	23	1732001904070848618	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	daf6c531e1e4df30
+1517	1542	1732001905590180413	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	94d26c12c6eb26b3
+1473	1495	1732001905542946262	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	147de326cf26fff6
+23	1450	1732001905498094948	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	26b36f3747a73eb
+1495	1517	1732001905565268355	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	7d6a857d99c41151
+1	23	1732001904070848618	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	daf6c531e1e4df30
+1495	1517	1732001905565268355	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	7d6a857d99c41151
+1517	1542	1732001905590180413	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	94d26c12c6eb26b3
+1587	1616	1732001905664697879	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	aac627eb38202f0c
+1542	1564	1732001905612503716	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	d2f89d242c95c862
+1542	1564	1732001905612503716	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	d2f89d242c95c862
+1587	1616	1732001905664697879	/Users/andifelder/Downloads/Uebung2/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	aac627eb38202f0c
+1564	1586	1732001905634760226	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	66c2bd98f71d93a3
+1587	1616	1732001905664697879	CMakeFiles/googletest-populate-complete	aac627eb38202f0c
