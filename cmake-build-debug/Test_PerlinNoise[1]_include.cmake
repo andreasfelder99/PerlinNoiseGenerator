@@ -1,5 +1,0 @@
-if(EXISTS "/Users/andifelder/Downloads/Uebung2/cmake-build-debug/Test_PerlinNoise[1]_tests.cmake")
-  include("/Users/andifelder/Downloads/Uebung2/cmake-build-debug/Test_PerlinNoise[1]_tests.cmake")
-else()
-  add_test(Test_PerlinNoise_NOT_BUILT Test_PerlinNoise_NOT_BUILT)
-endif()
