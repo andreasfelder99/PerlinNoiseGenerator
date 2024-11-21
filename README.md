@@ -10,9 +10,9 @@ Ich habe das Programm angepasst, dass man es mit `./PerlinNoise <smoothingFuncti
 - `exponential` : $ f(d) = 1 - e^{-d} $
 - `gaussian` : $f(d) = e^{-((d - 0.5)^2) / (2\sigma^2)}$
 - `piecewiseQuadratic` :
-  $$
+  $
   f(d) =\begin{cases}2d^2 & \text{if } d < 0.5 \\ 1 - 2(1-d)^2 & \text{if } d \geq 0.5 \end{cases}
-  $$
+  $
 
 Es ist auch möglich, das Argument als letztes Argument anzugeben mit allen anderen Argumenten um GridSize Seed etc. anzupassen.
 
