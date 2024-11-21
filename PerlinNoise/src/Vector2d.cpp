@@ -75,12 +75,13 @@ Vector2d Vector2d::normalized() const {
 }
 
 void Vector2d::normalize() {
-    if (magnitude() == 0.0) {
+    const double mg = magnitude();
+    if (mg == 0.0) {
         m_x = 0;
         m_y = 0;
     } else {
-        m_x = m_x / magnitude();
-        m_y = m_y / magnitude();
+        m_x /= mg;
+        m_y /= mg;
     }
 }
 
