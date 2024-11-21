@@ -22,17 +22,20 @@ public:
     [[nodiscard]] double y() const;
 
     // Arithmetic operations
-    double operator*(const Vector2d &other) const;
-
     Vector2d operator*(double c) const;
-
+    double operator*(const Vector2d &other) const;
     friend Vector2d operator*(double c, const Vector2d &vec);
+    friend Vector2d operator*(double &&c, const Vector2d &vec);
 
     Vector2d operator/(double c) const;
+    friend Vector2d operator/(const Vector2d &vec, double &&c);
+    friend Vector2d operator/(Vector2d &&vec, double c);
 
     Vector2d operator+(const Vector2d &other) const;
 
     Vector2d operator-(const Vector2d &other) const;
+    friend Vector2d operator-(Vector2d &&lhs, const Vector2d &rhs);
+    friend Vector2d operator-(const Vector2d &lhs, Vector2d &&rhs);
 
     // Normalization functions
     [[nodiscard]] Vector2d normalized() const;

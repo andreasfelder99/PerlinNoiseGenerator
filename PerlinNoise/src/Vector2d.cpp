@@ -66,6 +66,37 @@ Vector2d Vector2d::operator-(const Vector2d &other) const {
     return {m_x - other.x(), m_y - other.y()};
 }
 
+// Subtraction with LHS rvalue
+Vector2d operator-(Vector2d &&lhs, const Vector2d &rhs) {
+    lhs.m_x -= rhs.m_x;
+    lhs.m_y -= rhs.m_y;
+    return std::move(lhs);
+}
+
+// Subtraction with RHS rvalue
+Vector2d operator-(const Vector2d &lhs, Vector2d &&rhs) {
+    rhs.m_x = lhs.m_x - rhs.m_x;
+    rhs.m_y = lhs.m_y - rhs.m_y;
+    return std::move(rhs);
+}
+
+// Multiplication with constant rvalue
+Vector2d operator*(double &&c, const Vector2d &vec) {
+    return {vec.m_x * c, vec.m_y * c};
+}
+
+// Division with constant rvalue
+Vector2d operator/(const Vector2d &vec, double &&c) {
+    return {vec.m_x / c, vec.m_y / c};
+}
+
+// Division with constant rvalue and rvalue vector
+Vector2d operator/(Vector2d &&vec, const double c) {
+    vec.m_x /= c;
+    vec.m_y /= c;
+    return std::move(vec);
+}
+
 // Normalization functions
 Vector2d Vector2d::normalized() const {
     if (magnitude() == 0.0) {
@@ -75,12 +106,13 @@ Vector2d Vector2d::normalized() const {
 }
 
 void Vector2d::normalize() {
-    if (magnitude() == 0.0) {
+    const double mg = magnitude();
+    if (mg == 0.0) {
         m_x = 0;
         m_y = 0;
     } else {
-        m_x = m_x / magnitude();
-        m_y = m_y / magnitude();
+        m_x /= mg;
+        m_y /= mg;
     }
 }
 
