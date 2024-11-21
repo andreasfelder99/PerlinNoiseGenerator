@@ -59,4 +59,4 @@ Alle Bilder wurden mit Default-Parametern generiert.
 
 ### Piecewise Quadratic
 
-![Piecewise Quadratic Default](Images/pieceWiseEquation.png "Piecewise quadratic interpolation smoothing function")
+![Piecewise Quadratic Default](Images/piecewiseQuadratic.png "Piecewise quadratic interpolation smoothing function")
