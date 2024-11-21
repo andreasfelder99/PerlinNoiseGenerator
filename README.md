@@ -7,12 +7,10 @@ Ich habe das Programm angepasst, dass man es mit `./PerlinNoise <smoothingFuncti
 - `quintic` : $f(d) = 6d^5 - 15d^4 + 10d^3$
 - `cosine` : $f(d) = \frac{1-\cos{\pi d}}{2}$
 - `hermite` : $f(d) = d^2(3 - 2d)$
-- `exponential` : $ f(d) = 1 - e^{-d} $
+- `exponential` : $f(d) = 1 - e^{-d}$
 - `gaussian` : $f(d) = e^{-((d - 0.5)^2) / (2\sigma^2)}$
 - `piecewiseQuadratic` :
-  $
-  f(d) =\begin{cases}2d^2 & \text{if } d < 0.5 \\ 1 - 2(1-d)^2 & \text{if } d \geq 0.5 \end{cases}
-  $
+  $f(d) =\begin{cases}2d^2 & \text{if } d < 0.5 \\ 1 - 2(1-d)^2 & \text{if } d \geq 0.5 \end{cases}$
 
 Es ist auch möglich, das Argument als letztes Argument anzugeben mit allen anderen Argumenten um GridSize Seed etc. anzupassen.
 
