@@ -1,33 +1,47 @@
 # Perlin Noise Generator
 
-Ich habe das Programm angepasst, dass man es mit `./PerlinNoise <smoothingFunction>` ausführen kann. Es gibt folgende smoothing Funktionen:
+This project implements a Perlin noise generator with support for multiple smoothing (interpolation) functions. The program can be run via:
 
-- `linear` : $f(d) = d$
-- `cubic` : $f(d) = 3d^2 - 2d^3$
-- `quintic` : $f(d) = 6d^5 - 15d^4 + 10d^3$
-- `cosine` : $f(d) = \frac{1-\cos{\pi d}}{2}$
-- `hermite` : $f(d) = d^2(3 - 2d)$
-- `exponential` : $f(d) = 1 - e^{-d}$
-- `gaussian` : $f(d) = e^{-((d - 0.5)^2) / (2\sigma^2)}$
-- `piecewiseQuadratic` : ![piecewiseQuadratic function](Images/pieceWiseEquation.jpg)
+```bash
+./PerlinNoise <smoothingFunction>
+```
 
-Es ist auch möglich, das Argument als letztes Argument anzugeben mit allen anderen Argumenten um GridSize Seed etc. anzupassen.
+You can also specify the smoothing function as the last argument, after setting other parameters like grid size or seed.
 
-## Meine Beobachtungen
+## Supported Smoothing Functions
 
-### Variation der Gittergrösse
+The following smoothing functions are available:
 
-Eine grosse Gittergrösse führt zu weniger, aber grösseren Bereichen mit einer homogenen Struktur. Insbesondere wirken die Übergänge zwischen den Extremen glatter, auf Kosten der Details. Das Noise-Muster wirkt grober.
+* **`linear`**: \$f(d) = d\$
+* **`cubic`**: \$f(d) = 3d^2 - 2d^3\$
+* **`quintic`**: \$f(d) = 6d^5 - 15d^4 + 10d^3\$
+* **`cosine`**: \$f(d) = \frac{1 - \cos{(\pi d)}}{2}\$
+* **`hermite`**: \$f(d) = d^2(3 - 2d)\$
+* **`exponential`**: \$f(d) = 1 - e^{-d}\$
+* **`gaussian`**: \$f(d) = e^{-((d - 0.5)^2) / (2\sigma^2)}\$
+* **`piecewiseQuadratic`**: Defined as: ![piecewiseQuadratic function](Images/pieceWiseEquation.jpg)
 
-Eine kleine Gittergrösse erzeugt mehr Details und bessere Variationen im Noise. Allerdings wirkt das Bild etwas körniger und weniger glatt.
+## Observations
 
-### Verschiedene Interpolationsfunktionen
+### Grid Size
 
-Die Wahl der Interpolationsmethode hat einen Einfluss auf die 'Weichheit' der Übergänge. Eine lineare Interpolation erzeugt daher sehr harte Übergänge zwischen den Gitterpunkten wobei z.B. die kubische Interpolationsmethode deutlich glattere Übergänge erzeugt, auf Kosten der Performance.
+Changing the grid size affects the structure and detail level of the generated noise:
 
-## Generierte Bilder mit verschiedenen Interpolationsfunktionen
+* **Larger grid sizes** produce smoother transitions and broader homogeneous areas, but reduce detail.
+* **Smaller grid sizes** generate finer details and more variation, resulting in a sharper, more "grainy" texture.
 
-Alle Bilder wurden mit Default-Parametern generiert.
+### Interpolation Methods
+
+The interpolation function plays a key role in how smooth or sharp the transitions between noise values appear:
+
+* **Linear interpolation** results in abrupt, harsh transitions between grid points.
+* **Higher-order interpolations** like cubic or quintic produce much smoother gradients at the cost of performance.
+* **Cosine and Hermite** offer visually pleasing results with relatively simple formulas.
+* **Gaussian and exponential** produce interesting curve behaviors with different softness profiles.
+
+## Example Outputs
+
+All images below were generated using default parameters and different smoothing functions.
 
 ### Linear
 
@@ -60,3 +74,7 @@ Alle Bilder wurden mit Default-Parametern generiert.
 ### Piecewise Quadratic
 
 ![Piecewise Quadratic Default](Images/piecewiseQuadratic.png "Piecewise quadratic interpolation smoothing function")
+
+---
+
+Let me know if you’d like a short project description for the top of the GitHub repo or a license suggestion as well!
