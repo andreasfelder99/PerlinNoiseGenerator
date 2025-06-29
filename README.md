@@ -74,7 +74,3 @@ All images below were generated using default parameters and different smoothing
 ### Piecewise Quadratic
 
 ![Piecewise Quadratic Default](Images/piecewiseQuadratic.png "Piecewise quadratic interpolation smoothing function")
-
----
-
-Let me know if you’d like a short project description for the top of the GitHub repo or a license suggestion as well!
